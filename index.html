@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Final Project Progate</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+          background-image: url("kereta.jpg"); 
+          }
+      </style> 
+      <script type="text/javascript">
+      function cekNama(form) {
+      if (form.nama.value =="") {
+        alert("Nama harus diisi");
+        form.nama.focus();
+        return(false);
+      }
+      alert("Terima kasih," + form.nama.value);
+      return(true);
+    }
+      </script> 
+</head>
+<header>
+  <div class="container">
+    <div class="container">
+      <div class="header-left">
+        <img class="logo" src="">
+      </div>
+    </div>
+    <div class="header-right">
+      <a href="#" class="login">Log in</a>
+      <a href="#">Contact</a>
+      <a href="#">About us</a>
+      <a href="#">Home</a>
+      
+    </div>
+  </div>
+</header>
+<div class="top-wrapper">
+  <div class="container">
+    <h1>WELCOME ADVENTURERS.</h1>
+    <h2>Jobs fill your pocket, Adventures fill your soul.</h2>
+    <h3>take your time</h3>
+  </div>
+
+  <form>
+    <input class="search" type="text" placeholder="Search..." required>
+    <input class="button" type="button" value="Search">		
+</form>
+</div>
+<body style="background-color:#ffa500;">
+      <div class="title-wrapper" style="background-color: #ffa500;">
+        <div class="container">
+          <div class="heading">
+            <h3>Popular Destinations In Indonesian</h3>
+          </div>
+          <div class="destination">
+            <div class="bali">
+              <div class="bali-icon">
+                <img src="bali.jpg">
+                 <h4>Bali</h4>
+              </div>
+            </div>
+            <div class="bali">
+              <div class="bali-icon">
+                <img src="raja_ampat.jpg">
+                <h4>Raja Ampat</h4>
+              </div>
+            </div>
+            <div class="bali">
+              <div class="bali-icon">
+                <img src="mentawai.jpg">
+                <h4>Mentawai</h4>
+              </div>
+            </div>
+            <div class="bali">
+              <div class="bali-icon">
+                <img src="bunaken.jpg">
+                <h4>Bunaken</h4>
+              </div>
+            </div>
+            <div class="bali">
+              <div class="bali-icon">
+                <img src="wakatobi.png">
+                <h4>Wakatobi</h4>
+              </div>
+            </div>
+            <div class="bali">
+              <div class="bali-icon">
+                <img src="bromo.jpg">
+                <h4>Bromo</h4>
+              </div>
+            </div>
+            <div class="bali">
+              <div class="bali-icon">
+                <img src="bajo.jpeg">
+                <h4>Labuan Bajo</h4>
+              </div>
+            </div>
+            <div class="bali">
+              <div class="bali-icon">
+                <img src="borobudur.jpg">
+                <h4>Candi Borobudur</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div><br><br><br><br><br>
+    
+      <div class="wrapper">
+        <h2><center>Form</center></h2>
+        <div class="form">
+            <div class="input_field">
+                <label>Nama</label>
+                <input type="text" class="input" placeholder="Nama Anda">
+            </div>
+
+            <div class="input_field">
+                <label>Destination</label>
+                <div class="custom_select">
+                    <select>
+                        <option  value="">Choose!</option>
+                        <option  value="">Bali</option>
+                        <option  value="">Raja Ampat</option>
+                        <option  value="">Mentawai</option>
+                        <option  value="">Bunaken</option>
+                        <option  value="">Wakatobi</option>
+                        <option  value="">Bromo</option>
+                        <option  value="">Labuan Bajo</option>
+                        <option  value="">Candi Borobudur</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input_field">
+                <label>NO KTP</label>
+                <input type="text" class="input" placeholder="No KTP">
+            </div>
+
+            <div class="input_field">
+                <label>Tanggal Berangkat</label>
+                <input type="date" class="input" placeholder="Tanggal Berangkat">
+            </div>
+            
+            <div class="input_field">
+              <label>Email</label>
+              <input type="text" class="input" placeholder="Email">
+          </div>
+
+            <div class="input_field">
+                <label>NO HandPhone</label>
+                <input type="text" class="input" placeholder="No HP">
+            </div>
+
+            <div class="input_field">
+                <input type="submit" value="Submit" onclick = "cekNama(this.form)">
+            </div>
+        </div>
+    </div>
+  <footer>
+    <div class="container">
+      <img src="ESAFAR.png">
+      <p>Have A Nice Life</p>
+    </div>
+  </footer>
+</body>
+</html>
